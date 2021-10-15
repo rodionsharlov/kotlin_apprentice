@@ -42,4 +42,9 @@ fun main(){
      * */
     val tuesday = DayOfTheWeek.valueOf("Tuesday")
     println("Tuesday is day ${tuesday.ordinal}")
+
+    val today = DayOfTheWeek.today()
+    val isWeekend =
+        "It is${if (today.isWeekend) "" else " not"} the weekend"
+    println("It is $today. $isWeekend.")
 }
