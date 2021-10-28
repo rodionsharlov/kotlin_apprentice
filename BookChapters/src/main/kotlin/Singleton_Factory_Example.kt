@@ -45,16 +45,18 @@ object ScientistRepository {
   } 
 }
 
-val emmy = Scientist.newScientist("Emmy", "Noether") 
-val isaac = Scientist.newScientist("Isaac", "Newton") 
-val nick = Scientist.newScientist("Nikola", "Tesla") 
- 
-ScientistRepository.addScientist(emmy) 
-ScientistRepository.addScientist(isaac) 
-ScientistRepository.addScientist(nick) 
- 
-ScientistRepository.listAllScientists()
+fun main() {
+  val emmy = Scientist.newScientist("Emmy", "Noether")
+  val isaac = Scientist.newScientist("Isaac", "Newton")
+  val nick = Scientist.newScientist("Nikola", "Tesla")
 
-// 1: Emmy Noether 
-// 2: Isaac Newton 
-// 3: Nikola Tesla
+  ScientistRepository.addScientist(emmy)
+  ScientistRepository.addScientist(isaac)
+  ScientistRepository.addScientist(nick)
+
+  ScientistRepository.listAllScientists()
+
+  // 1: Emmy Noether
+  // 2: Isaac Newton
+  // 3: Nikola Tesla
+}
